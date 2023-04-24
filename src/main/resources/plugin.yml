@@ -1,0 +1,40 @@
+name: ${project.artifactId}
+version: ${project.version}
+main: com.kruthers.liveresources.LiveResources
+api-version: 1.14
+author: kruthers
+description: ${project.description}
+website: www.kruthers.com/projects/live_resorces
+permissions:
+  live_rp.default:
+    default: true
+    description: Default command for the plugin
+  live_rp.update:
+    default: op
+    description: Update the resourepack link, and reload it
+  live_rp.reload:
+    default: op
+    description: Reload the plugin's config/ resourcepack link
+  live_rp.hash:
+    default: op
+    description: Generate a hash for the resourcepack
+  live_rp.apply:
+    default: true
+    description: Reload the resourcepack you see
+  live_rp.apply.others:
+    default: op
+    description: Reload the resourcepack you see
+commands:
+  live_rp:
+    usage: /<command> [reloadconfig|update|version] ...
+    permission: live_rp.default
+    description: Core command
+    aliases:
+      - liveresources
+  reloadpack:
+    usage: /<command> [player]
+    permission: live_rp.apply
+    description: Reload your resourcepack from the server
+    aliases:
+      - reloadrp
+      - rp_reload

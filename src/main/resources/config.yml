@@ -1,0 +1,12 @@
+resourepack:
+  link: ""
+  hash: ""
+messages:
+  reload_sef: "&2Your resourcepack is being reloaded from the server"
+  reload_other: "&2Force reloading {name}'s resourcepack"
+  reloaded_other: "&2Your resourcepack is being reloaded by {name}"
+  reloaded_auto: "&2Your resourcepack has been automatically reloaded"
+  staff_notifcation: "&2{name} Updated the resourcepack"
+  update_notifcation: "&cThe resourcepack has been udpated"
+  failed_no_rp: "&4No resourepack provided to load in, please contact your system administrator"
+
